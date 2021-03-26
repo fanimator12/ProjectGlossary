@@ -12,25 +12,4 @@ public class Test
     System.out
         .println("Project 1: Client: " + project1.getDefinition("Client"));
     System.out.println(project1);
-    // Danish:
-    Project project2 = new Project("Project 2", "dk");
-    try
-    {
-      project2.addGlossaryItem("Client",
-          "Det program der som en del af en Client/Server applikation bliver "
-              + "installeret på computere til læger og sygeplejesker.");
-    }
-    catch (IllegalStateException e)
-    // Using the same phrase as in Project 1
-    {
-      System.out.println("Error: " + e.getMessage());
-    }
-    project2.addGlossaryItem("Bruger",
-        "Bruger af systemet -her en læge " + "eller sygeplejeske.");
-    project2.addGlossaryItem("Konto", "Et sted på en server med oplysninger "
-        + "om brugernavn, kodeord og telefonnummer.");
-    System.out
-        .println("Project 2: Client: " + project2.getDefinition("Client"));
-    System.out.println(project2);
-  }
 }
